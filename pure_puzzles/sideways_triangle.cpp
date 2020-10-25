@@ -1,5 +1,5 @@
 #include <iostream>
-
+//<TODO> check if there is a better way to think of this problem"
 
 void createSidewaysTriangle(){
     int poundCount=1;
