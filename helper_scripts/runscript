@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#takes in a c++ file, compiles, run, and delete file after
+clang++ ${1}
+./a.out
+rm a.out
