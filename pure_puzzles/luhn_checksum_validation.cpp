@@ -63,8 +63,8 @@ void LuhnCheckSumValidation::simulation(){
         }
         //calculate total
         totalDigits++;
-        oddNumTotal += addDigit(returnDoubleIfModTrue(num,totalDigits,2,1));
-        evenNumTotal += addDigit(returnDoubleIfModTrue(num,totalDigits,2,0));
+        oddNumTotal += addDigit(returnDoubleIfModTrue(num,totalDigits,2,0));
+        evenNumTotal += addDigit(returnDoubleIfModTrue(num,totalDigits,2,1));
 
     }
     if(totalDigits%2==0){
