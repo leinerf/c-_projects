@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+clang++ ${1}
+leaks -atExit -- ./a.out 
+rm -rf a.out
