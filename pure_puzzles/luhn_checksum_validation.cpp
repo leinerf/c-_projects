@@ -52,9 +52,8 @@ void LuhnCheckSumValidation::simulation(){
     int evenNumTotal = 0;
     int totalDigits = 0;
 
-    while(true){
+    while(std::cin.get(digit)){
         //get input
-        std::cin >> digit;
         int num = convertCharToInt(digit);
         
         //check if invalid char inputted
