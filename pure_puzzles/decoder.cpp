@@ -78,7 +78,6 @@ int Decoder::charToInt(char digit){
 }
 
 void Decoder::decode(int num){
-    
     if(state == PUNCTUATION) {
         num = modPunctuation(num);
         if(num == 0) {
@@ -127,6 +126,7 @@ void Decoder::decodeMessage() {
         }    
     }
 }
+
 int main(){
   Decoder decoder;
   decoder.decodeMessage();
