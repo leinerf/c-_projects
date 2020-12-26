@@ -1,6 +1,3 @@
-#include <iostream>
-#include <string>
-
 /*
 ------------------------
 PROBLEM: HALF OF A SQUARE
@@ -35,6 +32,9 @@ lfa:
 e:
 	e1: experiment with the input output library
 */
+#include <iostream>
+#include <string>
+
 std::string create_half_square(int length) {
         std::string result;
         for(int i=0;i < length; i++) {

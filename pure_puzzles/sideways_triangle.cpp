@@ -1,16 +1,62 @@
-#include <iostream>
+/*
+PROBLEM: A SIDEWAYS TRIANGLE
+Write a program that uses only two output statements,
+cout << "#" and cout << "\n", to produce a pattern of hash
+symbols shaped like a sideways triangle:
+#
+##
+###
+####
+###
+##
+#
+---------------
+0   7 - 6 
+1   7 - 5
+2   7 - 4
+3   7 - 3
+4   7 - 4
+5   7 - 5
+6   7 - 6
 
+3 - 0 = 3
+3 - 1 = 2
+3 - 2 = 1
+3 - 3 = 0
+3 - 4 = -1
+3 - 5 = -2
+3 - 6 = -3
+
+4 - abs(4 - row)
+----------------------
+Plan:
+rtp: create a sideways triangle like above only using 
+	only two output statements(cout << "#" and cout << "\n")
+dtp:
+	sht1: print the stars
+	sht2: repeatedly print the stars in a row based on length and 
+		only using two output statements(cout << "#" and cout << "\n")
+	sht3: print the appropriate amount of stars for each row
+swwyk: dtp:sht1 > dtp:sht2 > dtp:sht1
+rdtp:
+	sht1: print a square with any amount of output statements
+	sht2: print a square using only two output statements
+	sht3: print out the number of stars needed for each row
+lfa:
+	a1: only using two output statements(cout << "#" and cout << "\n") and given a length
+		indicates that we should use a for loop/
+	a2: outputing information means needing to use an output function or libarary
+e:
+	e1: experiment with the input output library
+*/
+#include <iostream>
+#include <cmath>
 void createSidewaysTriangle(){
-    int poundCount=1;
-    int switcher=1;
-    for(int i=0;i < 7;i++){
-        for(int j=0;j < poundCount ; j++){
-            std::cout << '#';
+    for(int i=0; i < 7;i++){
+        int numStars = 4 - std::abs(3 - i);
+        for(int j = 0; j < numStars; j++){
+            std::cout << '*';
         }
-        if(i == 3) {
-            switcher= -1;
-        }
-        poundCount = poundCount + (switcher * 1);
         std::cout << '\n';
     }
 }
