@@ -8,7 +8,9 @@ number on a separate line.
 for (int row = 1; row <= 5; row++) { 
     cout << expression << "\n";
 }
-plan:
+-----------------------------
+
+Plan:
 rtp: output the 5, 4, 3, 2, 1 by filling out the expression in the for loop above
 dtp:
     sht1: get the right math expression

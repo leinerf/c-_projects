@@ -10,7 +10,7 @@ symbols shaped like a sideways triangle:
 ###
 ##
 #
----------------
+
 0   7 - 6 
 1   7 - 5
 2   7 - 4
@@ -29,6 +29,7 @@ symbols shaped like a sideways triangle:
 
 4 - abs(4 - row)
 ----------------------
+
 Plan:
 rtp: create a sideways triangle like above only using 
 	only two output statements(cout << "#" and cout << "\n")
@@ -48,6 +49,9 @@ lfa:
 	a2: outputing information means needing to use an output function or libarary
 e:
 	e1: experiment with the input output library
+
+Absolute values are great if you want to decrease a value to a certain point then increase it again.
+Basically the highest value in the example will be when you are subtracting zero
 */
 #include <iostream>
 #include <cmath>
