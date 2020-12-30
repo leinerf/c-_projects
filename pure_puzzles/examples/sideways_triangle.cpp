@@ -54,14 +54,19 @@ Absolute values are great if you want to decrease a value to a certain point the
 Basically the highest value in the example will be when you are subtracting zero
 */
 #include <iostream>
-#include <cmath>
+
 void createSidewaysTriangle(){
-    for(int i=0; i < 7;i++){
-        int numStars = 4 - std::abs(3 - i);
-        for(int j = 0; j < numStars; j++){
+	int incr=1;
+	int i=1;
+    while(i > -1){
+		if(i == 4) {
+			incr = -1;
+		}
+        for(int j = 0; j < i; j++){
             std::cout << '*';
         }
         std::cout << '\n';
+		i+=incr;
     }
 }
 
