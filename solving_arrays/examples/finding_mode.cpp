@@ -73,15 +73,15 @@ int getModeUsingHistogram(int arr[], int arrSize)
         hist[arr[i] - 1]++;
     }
     
-    int mode=1;
+    int mode=0;
     for(int i = 0; i < 10; i++)
     {
-        if(hist[i] > hist[mode-1])
+        if(hist[i] > hist[mode])
         {
-            mode=i+1;
+            mode=i;
         }
     }
-    return mode;
+    return mode+1;
 }
 
 int main()
